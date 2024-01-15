@@ -1,0 +1,246 @@
+<!--  
+
+    Website of GUI for beginner composers
+
+    Copyright © of Di Lorenzo Giuliano, Mugnaini Nicola, Ouali Ernest
+
+-->
+
+<head>
+	<link rel = "stylesheet" href = "./Style.css">
+    <title> Sequencer GEN </title>
+</head>
+
+<body>
+
+    <input id = "fileSelector" type = "file" accept = ".txt">
+    <br>
+    <label for = "fileSelected"> Selected file's content </label>
+    <output id = "fileSelected" type = "text"></output>
+    <br><br>
+
+    <!--
+        MAIN BUTTONS
+    -->
+
+    <div class = "main_button_div">
+        <button id = "play" class = "button animated"> Play melody </button>
+        <button id = "play_loop" class = "button animated"> Play in loop</button>
+        <button id = "pause" class = "button animated"> Pause </button>
+        <button id = "resume" class = "button animated"> Resume </button>
+        <button id = "quit" class = "button animated"> Quit playing </button>
+    </div>
+    <br>
+
+    <!--
+        LETTERS
+    -->
+
+    <p id = "title_letter"> Notes </p>
+
+    <div class = "led-container">
+        <div class = "led" id = "led3"></div>
+        <div class = "led" id = "led4"></div>
+        <div class = "led" id = "led5"></div>
+        <div class = "led" id = "led6"></div>
+        <div class = "led" id = "led7"></div>
+        <div class = "led" id = "led1"></div>
+        <div class = "led" id = "led2"></div>
+        <div class = "led" id = "led8"></div>
+    </div>
+    
+    <div class = "letter_button_div">
+        <button id = "pitch_C" class ="button letter"> C </button>
+        <button id = "pitch_D" class ="button letter"> D </button>
+        <button id = "pitch_E" class ="button letter"> E </button>
+        <button id = "pitch_F" class ="button letter"> F </button>
+        <button id = "pitch_G" class ="button letter"> G </button>
+        <button id = "pitch_A" class ="button letter"> A </button>
+        <button id = "pitch_B" class ="button letter"> B </button>
+        <button id = "pitch_0" class ="button letter"> 0 </button>
+    </div>
+
+    <!--
+        OCTAVES
+    -->
+
+    <p id = "title_octaves"> Octaves </p>
+
+    <div class="led-container1">
+        <div class="ledoct" id="led9"></div>
+        <div class="ledoct" id="led10"></div>
+        <div class="ledoct" id="led11"></div>
+        <div class="ledoct" id="led12"></div>
+        <div class="ledoct" id="led13"></div>
+        <div class="ledoct" id="led14"></div>
+        <div class="ledoct" id="led15"></div>
+    </div>
+
+    <div class = "octave_button_div">
+        <button id = "octave_0" class ="button octave"> 0 </button>
+        <button id = "octave_1" class ="button octave"> 1 </button>
+        <button id = "octave_2" class ="button octave"> 2 </button>
+        <button id = "octave_3" class ="button octave"> 3 </button>
+        <button id = "octave_4" class ="button octave"> 4 </button>
+        <button id = "octave_5" class ="button octave"> 5 </button>
+        <button id = "octave_6" class ="button octave"> 6 </button>
+    </div>
+
+    <!--
+        DURATIONS
+    -->
+
+    <p id = "title_durations"> Durations </p>
+
+    <div class="led-container2">
+        <div class="lednote" id="led16"></div>
+        <div class="lednote" id="led17"></div>
+        <div class="lednote" id="led18"></div>
+        <div class="lednote" id="led19"></div>
+        <div class="lednote" id="led20"></div>
+    </div>
+
+    <div class = "duration_button_div">
+        <button id = "duration_whole" class = "button whole"> &#119133 </button>
+        <button id = "duration_half" class = "button half"> &#119134 </button>
+        <button id = "duration_quarter" class = "button quarter"> &#9833 </button>
+        <button id = "duration_eighth" class = "button eight"> &#119136 </button>
+        <button id = "duration_sixteenth" class = "button sixt"> &#119137 </button>
+    </div>
+
+    <!--
+        ALTERATIONS
+    -->
+
+    <p id = "title_alteration"> Alterations </p>
+    
+    <div class = "led-container4">
+        <div class = "ledkey" id = "led26"></div>
+        <div class = "ledkey" id = "led27"></div>
+        <div class = "ledkey" id = "led25"></div>
+    </div>
+
+    <div class = "alterations_button_div">
+        <button id = "flat" class = "button key_alt"> &#9837 </button>
+        <button id = "nat" class = "button key_alt"> &#9838 </button>
+        <button id = "sharp" class = "button key_alt"> &#9839 </button>
+    </div>
+        
+    <!--
+        WAVEFORMS
+    -->
+
+    <p id = "title_wave"> Waveforms </p>
+
+    <div class="led-container3">
+        <div class="ledwave" id="led21"></div>
+        <div class="ledwave" id="led22"></div>
+        <div class="ledwave" id="led23"></div>
+        <div class="ledwave" id="led24"></div>
+    </div>
+
+    <div class = "wave_button_div">
+        <button id = "wave_sine" class ="button wave_type"> &#x223F </button>
+        <button id = "wave_square" class ="button wave_type"> &#9101 </button>
+        <button id = "wave_triangle" class ="button wave_type"> Λ </button>
+        <button id="wave_sawtooth" class="button wave_type"> &#x1D0E </button>
+    </div>
+    <br>
+
+    <!--
+        ADD AND CLEAN NOTE
+    -->
+
+    <div class = "add_clean_button_div">
+        <button id = "add_note_button" class = "button note"> Add Note </button>
+        <button id = "clean_note_button" class = "button note"> Clean Note </button>
+        
+    <!--
+        LOAD AND SAVE MELODY
+    -->
+        
+        <button id = "load_melody" class = "button melody"> Load Melody </button>
+        <button id = "save_melody" class = "button melody"> Save Melody </button>
+        <button id = "clean" class = "button melody"> Clean melody </button>
+    </div>
+    <br>
+
+    <!--
+        AUDIO EFFECTS
+    -->
+
+    <div class = "checkbox-container">
+        <label class = "checkbox-label"> Choose a possible option: </label>
+        
+        <div class = "checkbox-group">
+            <label for = "reverb_checkbox"> Reverb </label>
+            <input type = "checkbox" id = "reverb_checkbox" name = "reverb_checkbox">
+
+            <label for = "delay_checkbox">Delay</label>
+            <input type = "checkbox" id = "delay_checkbox" name = "delay_checkbox">
+        </div>
+    </div>
+
+    <!--
+        BPM AND TUNE
+    -->
+
+    <br>
+
+    <div class = "label_div">
+        <label id = "label_bpm"> Enter BPM: </label>
+        <input type = "number" id = "bpm_html" placeholder = "Enter a number" value = "120" step = 1 min = "40" max = "200" required>
+        
+        <label id = "label_tune" > Enter tuning frequency: </label>
+        <input type = "number" id = "tune" placeholder = "Enter a number" value = "440" step = 1 min = "432" max = "440" required>
+
+    <!--
+        LOCK AND UNLOCK
+    -->
+
+        <button class = "button" id = "lock_button" onclick = "lockApp()"> &#128274 </button>
+
+        <div id = "overlay">
+            <div id = "lockedContent">
+                <p> Press the "Unlock" button to restore the interaction </p>
+                <button class = "button unlock" onclick = "unlockApp()"> &#9919	 </button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--
+        GRID PARAMETERS
+    -->
+
+    <div class = "label_div_grid">
+        <label class = "octaves_grid_button"> First octave (0-6): </label>
+        <input type = "number" class = "octaves" id = "min_octave_grid" placeholder = "Enter a number" value = "3" step = 1 min = "0" max = "6" required/>
+        
+        <label class = "octaves_grid_button"> Last octave (0-6): </label>
+        <input type = "number" class = "octaves" id = "max_octave_grid" placeholder = "Enter a number" value = "4" step = 1 min = "0" max = "6" required/>
+
+        <label class = "starting_button"> Note position: </label>
+        <input type = "number" class = "starting" id = "starting_point_note" placeholder = "Enter a number" value = "0" step = 1 min = "0" required/>
+        
+        <label class = "bars_button"> Number of bars: </label>
+        <input type = "number" class = "bars_number" id = "n_bars" placeholder = "Enter a number" value = "2" step = 1 min = "1" required/>
+    </div>
+    <br>
+
+    <!--
+        CANVAS
+    -->
+
+    <canvas id = "myCanvas"></canvas>
+
+    <!--
+        SCRIPTS
+    -->
+
+    <script src= "./Variables_declaration.js"></script>
+    <script src = "./Animations.js"></script>
+    <script src = "./Code.js"></script>
+    <script src = "./Buttons_functions.js"></script>
+
+</body>
