@@ -10,10 +10,8 @@ This project is the result of a team work for the course _Advanced Coding Tools 
 ## How Can I Use It?
 
 The graphic interface allows you to insert notes inside a sequence that will be displayed and played at will.
-Here is a quick video tutorial:
 
-<video src="./Video_demo.mp4" controls title="Title"></video
-
+You will find a video demo of our sequencer registered as `Video_demo.mp4` in this folder.
 Don't worry, anything shown in the video will be explained below in this page.
 
 ### How Can I Write A Melody?
