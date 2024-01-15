@@ -40,7 +40,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-left: 1%;
-	margin-bottom: 20px;
 	width: 30%;
 	background-color: aliceblue;
 }
@@ -153,8 +152,8 @@ body {
 	height: 15px;
 	background-color: darkred;
 	border-radius: 50%;
-	margin-left: 25px;
-	margin-right: 32px;
+	margin-left: 30px;
+	margin-right: 12px;
 	display: inline-block;
 	transform: translate(-80%, 0%);
 }
@@ -220,8 +219,8 @@ body {
 	height: 15px;
 	background-color: darkred;
 	border-radius: 50%;
-	margin-left: 20px;
-	margin-right: 50px;
+	margin-left: 5px;
+	margin-right: 48px;
 	display: inline-block;
 	transform: translate(600%, 0%);
 }
@@ -285,8 +284,8 @@ body {
 	height: 15px;
 	background-color: darkred;
 	border-radius: 50%;
-	margin-left: 90px;
-	margin-right: 23px;
+	margin-left: 70px;
+	margin-right: 20px;
 	display: inline-block;
 	transform: translate(20%, 0%);
 }
@@ -343,8 +342,8 @@ body {
 	height: 15px;
 	background-color: darkred;
 	border-radius: 50%;
-	margin-left: 45px;
-	margin-right: 180px;
+	margin-left: 90px;
+	margin-right: 80px;
 	display: inline-block;
 	transform: translate(-1500%, 0%);
 }
@@ -401,8 +400,8 @@ body {
 	height: 15px;
 	background-color: darkred;
 	border-radius: 50%;
-	margin-left: -25px;
-	margin-right: 158px;
+	margin-left: -6px;
+	margin-right: 104px;
 	display: inline-block;
 	transform: translate(0%, 0%);
 	
